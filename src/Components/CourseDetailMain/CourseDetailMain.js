@@ -18,7 +18,7 @@ const CourseDetailMain = (props) => {
             </p>
           </div>
           <div class={styles.marginbot}>
-            <p>Instructor Mode: In Person</p>
+            <p>Instruction Mode: In Person</p>
             <p>Maximum Enrollment: 10</p>
             <p>Seats Available: 5</p>
             <p>Credit Hours: 3</p>

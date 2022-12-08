@@ -25,3 +25,10 @@ img {
 .text {
   margin-bottom: 0.5rem;
 }
+.card {
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.106);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  max-width: 31%;
+}

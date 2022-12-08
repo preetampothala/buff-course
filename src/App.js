@@ -1,12 +1,15 @@
 import { Route } from "react-router-dom";
+
+import { Fragment } from "react";
 import Home from "./Pages/Home/Home";
 import CourseDetail from "./Pages/CourseDetail/CourseDetail";
-import CartPage from "./Pages/Cart/CartPage";
+import CartPage from "./Pages/CartPage/CartPage";
+import MyCourses from "./Pages/MyCoursesPage/MyCourses";
 import "./App.css";
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Route exact path="/home">
         <Home />
       </Route>
@@ -16,7 +19,10 @@ function App() {
       <Route exact path="/cart">
         <CartPage />
       </Route>
-    </div>
+      <Route exact path="/mycourses">
+        <MyCourses />
+      </Route>
+    </Fragment>
   );
 }
 

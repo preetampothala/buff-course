@@ -1,4 +1,4 @@
-import Card from "../Card/Card";
+import { Link } from "react-router-dom";
 import styles from "./CourseItem.module.css";
 const CourseItem = (props) => {
   const description =
@@ -6,8 +6,8 @@ const CourseItem = (props) => {
       ? props.description.slice(0, 50) + " ..."
       : props.description;
   return (
-    <Card>
-      <li className={styles.listitem}>
+    <li className={styles.card}>
+      <Link classname={styles.listitem} to={`/course-detail/`}>
         <div className={styles.image}>
           <img src={props.image} alt={props.title} />
         </div>
@@ -19,8 +19,8 @@ const CourseItem = (props) => {
             <p>{props.rating}</p>
           </div>
         </div>
-      </li>
-    </Card>
+      </Link>
+    </li>
   );
 };
 export default CourseItem;

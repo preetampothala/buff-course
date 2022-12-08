@@ -4,18 +4,16 @@ import styles from "./Search.module.css";
 function Search(props) {
   const searchRef = useRef();
   const handleChange = (e) => {
-    e.preventDefault();
     props.onSearchChange(searchRef.current.value);
   };
   return (
-    <form className={styles.search} onChange={handleChange}>
-      <input
-        className={styles.search_input}
-        type="text"
-        placeholder="Search"
-        ref={searchRef}
-      />
-    </form>
+    <input
+      className={styles.search}
+      type="text"
+      placeholder="Search"
+      ref={searchRef}
+      onChange={handleChange}
+    />
   );
 }
 export default Search;

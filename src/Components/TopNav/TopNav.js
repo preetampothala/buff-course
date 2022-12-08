@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./TopNav.module.css";
 import Cart from "../Cart/Cart";
 const TopNav = () => {
@@ -9,7 +9,13 @@ const TopNav = () => {
       </div>
       <h4 className={styles.welcomeText}>Welcome to Course Search portal</h4>
       <div className={styles.links}>
-        <p className={styles.linksp}>My Courses</p>
+        <NavLink
+          activeClassName={styles.active}
+          to="/mycourses"
+          className={styles.linksp}
+        >
+          My Courses
+        </NavLink>
         <Cart />
         {/* <Link to="/home">My Courses</Link>
         <Link to="/course-detail">Course Detail</Link> */}

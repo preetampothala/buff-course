@@ -15,9 +15,6 @@ const CartPage = () => {
           <h1 className={styles.title}>Cart</h1>
           <CartPageItem />
           <CartPageItem />
-          <CartPageItem />
-          <CartPageItem />
-          <CartPageItem />
           <Button className={styles.enrollbutton} onClick={EnrollClickhandler}>
             Enroll Courses
           </Button>
